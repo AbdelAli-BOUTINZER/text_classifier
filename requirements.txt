@@ -1,0 +1,21 @@
+# NLP
+spacy
+
+# ML
+scikit-learn
+
+# Data versioning & tracking
+dvc
+mlflow
+
+# API
+fastapi
+uvicorn
+
+# Monitoring
+prometheus_client
+
+# Utilities
+pandas
+joblib
+python-dotenv

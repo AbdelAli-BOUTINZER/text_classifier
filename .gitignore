@@ -1,0 +1,23 @@
+# Ignore Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+
+# VSCode settings
+.vscode/
+
+# DVC and MLFlow stuff
+*.dvc
+.mlflow/
+.dvc/
+!.dvc
+data/*
+!data/raw/
+!data/processed/
+
+# Model and results
+models/
+reports/

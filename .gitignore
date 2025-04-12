@@ -10,13 +10,13 @@ __pycache__/
 .vscode/
 
 # DVC and MLFlow stuff
-
+# *.dvc
 .mlflow/
 .dvc/ 
 !.dvc
-data/*
+# data/*
 !data/raw/
-!data/processed/
+# !data/processed/
 
 # Model and results
 models/

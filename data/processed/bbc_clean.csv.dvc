@@ -1,0 +1,5 @@
+outs:
+- md5: cac1ff9ecd771a8d38b1fae36055a4b1
+  size: 3077951
+  hash: md5
+  path: bbc_clean.csv

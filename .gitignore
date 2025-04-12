@@ -10,9 +10,9 @@ __pycache__/
 .vscode/
 
 # DVC and MLFlow stuff
-*.dvc
+
 .mlflow/
-.dvc/
+.dvc/ 
 !.dvc
 data/*
 !data/raw/

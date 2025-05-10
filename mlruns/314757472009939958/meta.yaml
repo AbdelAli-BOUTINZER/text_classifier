@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/314757472009939958
+creation_time: 1744535952661
+experiment_id: '314757472009939958'
+last_update_time: 1744535952661
+lifecycle_stage: active
+name: bbc_text_classification2

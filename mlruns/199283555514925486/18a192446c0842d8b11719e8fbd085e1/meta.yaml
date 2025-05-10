@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/AbdelAli/Downloads/bbc_classification/text_classifier/mlruns/199283555514925486/18a192446c0842d8b11719e8fbd085e1/artifacts
+end_time: 1744483178853
+entry_point_name: ''
+experiment_id: '199283555514925486'
+lifecycle_stage: active
+run_id: 18a192446c0842d8b11719e8fbd085e1
+run_name: useful-sheep-483
+run_uuid: 18a192446c0842d8b11719e8fbd085e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483157819
+status: 3
+tags: []
+user_id: AbdelAli

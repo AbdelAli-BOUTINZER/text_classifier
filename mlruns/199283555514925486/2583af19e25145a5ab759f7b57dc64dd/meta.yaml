@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/AbdelAli/Downloads/bbc_classification/text_classifier/mlruns/199283555514925486/2583af19e25145a5ab759f7b57dc64dd/artifacts
+end_time: 1744527515647
+entry_point_name: ''
+experiment_id: '199283555514925486'
+lifecycle_stage: active
+run_id: 2583af19e25145a5ab759f7b57dc64dd
+run_name: enthused-roo-943
+run_uuid: 2583af19e25145a5ab759f7b57dc64dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744527514067
+status: 4
+tags: []
+user_id: AbdelAli

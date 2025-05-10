@@ -1,0 +1,6 @@
+2025-05-10 16:57:58,675 - INFO - NumExpr defaulting to 8 threads.
+2025-05-10 16:58:20,409 - INFO - NumExpr defaulting to 8 threads.
+2025-05-10 16:58:54,151 - INFO - NumExpr defaulting to 8 threads.
+2025-05-10 16:59:03,417 - INFO - \u2705 Called `root` with args=() kwargs={}
+2025-05-10 17:01:15,304 - INFO - \u2705 Called `preprocess` with args=('real madrid wins fc barcelona',) kwargs={}
+2025-05-10 17:01:15,310 - INFO - \u2705 Called `predict` with args=() kwargs={'_': None, 'request': TextRequest(text='real madrid wins fc barcelona')}

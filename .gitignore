@@ -21,3 +21,4 @@ __pycache__/
 # Model and results
 models/
 reports/
+/predictions.csv

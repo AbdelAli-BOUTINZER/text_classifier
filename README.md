@@ -6,7 +6,7 @@ This project classifies BBC news articles into one of 5 categories: **sport**, *
 
 - **NLP**: spaCy
 - **Modeling**: scikit-learn
-- **Data Versioning**: DVC
+- **Data Versioning**: DVCpython -m venv venv
 - **Experiment Tracking**: MLFlow
 - **Deployment**: FastAPI
 - **Monitoring**: Prometheus

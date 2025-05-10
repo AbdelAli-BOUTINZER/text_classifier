@@ -1,22 +1,26 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 import joblib
 import spacy
 
+# 🔐 Security + 🔍 Logger
+from .security import verify_token
+from .logger import log_to_file
+
 # Load NLP
 nlp = spacy.load("en_core_web_sm")
 
-# Load pipeline (vectorizer + classifier)
+# Load model
 model = joblib.load("text_classifier/models/logistic_regression.pkl")
 
-# Init FastAPI app
+# FastAPI app
 app = FastAPI(title="BBC Text Classifier API")
 
-# Request body format
 class TextRequest(BaseModel):
     text: str
 
-# Preprocess text
+# 🔍 Log preprocessing
+@log_to_file
 def preprocess(text: str) -> str:
     doc = nlp(text)
     tokens = [
@@ -25,14 +29,14 @@ def preprocess(text: str) -> str:
     ]
     return " ".join(tokens)
 
-# Root endpoint
 @app.get("/")
+@log_to_file
 def root():
-    return {"message": "🔥 BBC Text Classifier is ready 🔥"}
+    return {"message": " News article Text Classifier is ready (adnane-abdelali-abdelahy) ⚠🚸☢☢🛐🕉"}
 
-# Predict endpoint
 @app.post("/predict")
-def predict(request: TextRequest):
+@log_to_file
+def predict(request: TextRequest, _: str = Depends(verify_token)):
     try:
         clean_text = preprocess(request.text)
         prediction = model.predict([clean_text])[0]

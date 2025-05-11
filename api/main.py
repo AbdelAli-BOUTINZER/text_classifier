@@ -2,10 +2,14 @@ from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 import joblib
 import spacy
+from prometheus_fastapi_instrumentator import Instrumentator
 
 # 🔐 Security + 🔍 Logger
 from .security import verify_token
 from .logger import log_to_file
+
+
+
 
 # Load NLP
 nlp = spacy.load("en_core_web_sm")
@@ -15,6 +19,10 @@ model = joblib.load("text_classifier/models/logistic_regression.pkl")
 
 # FastAPI app
 app = FastAPI(title="BBC Text Classifier API")
+
+# 📊 Monitoring
+instrumentator = Instrumentator()
+instrumentator.instrument(app).expose(app)
 
 class TextRequest(BaseModel):
     text: str
@@ -43,3 +51,5 @@ def predict(request: TextRequest, _: str = Depends(verify_token)):
         return {"prediction": prediction}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+

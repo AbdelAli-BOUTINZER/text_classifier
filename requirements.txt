@@ -5,18 +5,17 @@ spacy
 scikit-learn
 
 # Data versioning & tracking
-dvc
-mlflow
+# dvc
+# mlflow
 
 # API
 fastapi
 uvicorn
 
 # Monitoring
-prometheus_client
 prometheus-fastapi-instrumentator
 
 # Utilities
-pandas
+# pandas
 joblib
-python-dotenv
+

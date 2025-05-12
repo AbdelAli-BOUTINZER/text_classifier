@@ -1,0 +1,4 @@
+# Don't copy unnecessary stuff
+.venv/
+.data/
+.dvc/

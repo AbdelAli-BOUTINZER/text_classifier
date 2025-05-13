@@ -10,7 +10,7 @@ This project classifies BBC news articles into one of 5 categories: **sport**, *
 - **Experiment Tracking**: MLFlow
 - **Deployment**: FastAPI
 - **Monitoring**: Prometheus
-- **CI/CD**: GitHub Actions
+- **CI/CD**: Jenkins
 
 ## 🛠 Project Structure
 

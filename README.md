@@ -15,7 +15,6 @@ This project classifies BBC news articles into one of 5 categories: **sport**, *
 ## 🛠 Project Structure
 
 - `data/`: Raw and processed data
-- `src/`: Codebase organized by task
+- `src/`: Codebase 
 - `models/`: Trained models
-- `reports/`: Evaluation results
-- `.github/workflows/`: CI/CD configs
+- 'api/': API
